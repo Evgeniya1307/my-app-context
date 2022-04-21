@@ -10,7 +10,9 @@ function App() {
 <EditorProvider>
 <CodeBar/>
 
-<div className={styles.main}></div>
+<div className={styles.main}>
+
+</div>
 
 </EditorProvider>
 
