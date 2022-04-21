@@ -36,7 +36,7 @@ const CodeBar = () => {
 <div className={styles.editor}>
     {activeTab==="html" ? <HtmlEditor/> : null }
     {activeTab==="css" ? <CssEditor/> : null }
-    {activeTab==="js" ? <div>JS</div> : null }
+    {activeTab==="js" ? JsEditor : null }
 
 </div>
 
