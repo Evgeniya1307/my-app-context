@@ -1,10 +1,17 @@
-import React, {createContext, useState} from "react";
+import React, { createContext, useState } from "react";
 
-
-const EditorContext =  createContext()
+const EditorContext = createContext();
 // делаю провайдер
-const EditorProvider = ({children}) => {
-
-   //делаю состояния для html и js
-
-}
+const EditorProvider = ({ children }) => {
+  //делаю состояния для html, css  и js
+  const [html, setHtml] = useState("");
+  const [css, setCss] = useState("");
+  const [js, setJs] = useState("");
+  //для передачи value
+  const values={
+      html, css, js, setHtml, setCss, setJs
+  }
+  
+  // возвращаю разметку
+  return <EditorContext.Provider value={values}>{children}</EditorContext.Provider>;
+};
