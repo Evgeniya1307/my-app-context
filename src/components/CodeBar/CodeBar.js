@@ -7,7 +7,7 @@ const CodeBar = ()=> {
         <div className={styles.codebar}>
         <nav className={styles.tab}>
           <button
-          className={styles.item}>
+          className={`${styles.item} ${styles.activeTab}`}>
               HTML
           </button> 
           <button
