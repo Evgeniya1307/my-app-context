@@ -15,6 +15,8 @@ const HtmlEditor = () => {
       mode="html"
       theme="monokai"
       name="editor_html"
+      value={html}
+      onChange={value=>setHtml(value)}
       fontSize="16"
       heigth={"100%"}
       width={"100%"}
