@@ -1,8 +1,8 @@
 import React from "react";
-import './App.css';
 import CodeBar from "./components/CodeBar/CodeBar";
 import { EditorProvider } from "./context/context";
-import styles from "./App.module.css";
+import styles from"./App.module.css";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
 <CodeBar/>
 
 <div className={styles.main}>
+<Header/>
 
 </div>
 
