@@ -8,10 +8,14 @@ const EditorProvider = ({ children }) => {
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
   //для передачи value
-  const values={
+  const value={
       html, css, js, setHtml, setCss, setJs
   }
   
   // возвращаю разметку
-  return <EditorContext.Provider value={values}>{children}</EditorContext.Provider>;
+  return <EditorContext.Provider value={value}>
+  {children}
+  </EditorContext.Provider>;
 };
+
+export {EditorProvider, EditorContext}
