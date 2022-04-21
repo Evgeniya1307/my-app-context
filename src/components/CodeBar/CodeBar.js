@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./CodeBar.module.css";
 import CssEditor from "./Editor/CssEditor";
 import HtmlEditor from "./Editor/HtmlEditor";
+import JsEditor from "./Editor/JsEditor";
 
 const CodeBar = () => {
   // определяюсь какой tab показывать html css js делаю это при момощи состояния
@@ -36,7 +37,7 @@ const CodeBar = () => {
 <div className={styles.editor}>
     {activeTab==="html" ? <HtmlEditor/> : null }
     {activeTab==="css" ? <CssEditor/> : null }
-    {activeTab==="js" ? JsEditor : null }
+    {activeTab==="js" ? <JsEditor/>: null }
 
 </div>
 
