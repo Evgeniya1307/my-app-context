@@ -1,14 +1,14 @@
-import React, {useContext}from 'react';
+import React, { useContext } from "react";
 import styles from "./Preview.module.css";
-import { EditorContext } from '../../../context/context';
+import { EditorContext } from "../../../context/context";
 
-const Preview = ()=>{
-    //достаю html css js
-    const {html, css, js} = useContext(EditorContext)
-   //создаю функцию которая всё выводит
-   const document = useMemo(() => {
+const Preview = () => {
+  //достаю html css js
+  const { html, css, js } = useContext(EditorContext);
+  //создаю функцию которая всё выводит
+  const document = useMemo(() => {
     if (!html && !css && !js) return;
-        return `
+    return `
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +25,18 @@ ${js}
 </body>
 </html>
 `;
-}, [html, css, js])
-//   iframe - выводит результат нашего кода который мы будем писать слева
-//   srcDoc -будет выводить <!DOCTYPE html>
-return (
-<div className={styles.content}>
-{document ? (
-  <iframe title="preview" className={styles.preview} srcDoc={document} />
-) : (
-  <div className={styles.loading}>Your code will be displayed here</div>
-)}
-</div>
-);
+  }, [html, css, js]);
+  //   iframe - выводит результат нашего кода который мы будем писать слева
+  //   srcDoc -будет выводить <!DOCTYPE html>
+  return (
+    <div className={styles.content}>
+      {document ? (
+        <iframe title="preview" className={styles.preview} srcDoc={document} />
+      ) : (
+        <div className={styles.loading}>Your code will be displayed here</div>
+      )}
+    </div>
+  );
 };
 
 export default Preview;
