@@ -4,7 +4,7 @@ import "ace-builds/src-noconflict/mode-css";
 import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/snippets/css";
 import "ace-builds/src-noconflict/ext-language_tools";
-import { EditorContext } from '../../../context/context';
+import { EditorContext } from '../../context/context';
 
 function CssEditor() {
   //вытаскиваю css

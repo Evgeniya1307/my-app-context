@@ -4,7 +4,7 @@ import "ace-builds/src-noconflict/mode-html";
 import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/snippets/html";
 import "ace-builds/src-noconflict/ext-language_tools";
-import { EditorContext } from '../../../context/context';
+import { EditorContext } from '../../context/context';
 
 const HtmlEditor = () => {
   //получем доступ к const {html, setHtml}
