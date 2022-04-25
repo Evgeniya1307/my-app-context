@@ -28,3 +28,10 @@
 .button:hover {
     background: #444;
 }
+.camera {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    z-index: 11111;
+}
