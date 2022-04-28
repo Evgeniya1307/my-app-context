@@ -6,7 +6,7 @@ import { EditorContext } from "../../context/context";
 const Preview = () => {
   //достаю html css js
   const { html, css, js } = useContext(EditorContext);
-  //создаю функцию которая всё выводит
+  //создаю функцию которая всё выводит useMemo()
   const document = useMemo(() => {
     if (!html && !css && !js) return;
     return `
