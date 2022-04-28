@@ -7,7 +7,7 @@ import "ace-builds/src-noconflict/ext-language_tools";
 import { EditorContext } from '../../context/context';
 
 function JsEditor() {
-  //вытаскиваюданные с js 
+  //вытаскиваю данные с js данные 
   const{js, setJs}= useContext(EditorContext)
   return (
     <AceEditor
