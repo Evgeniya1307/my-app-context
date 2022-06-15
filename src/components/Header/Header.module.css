@@ -2,7 +2,7 @@
     height: 70px;
     flex-shrink: 0;
     background: #272822;
-    color:white;
+    color:rgb(239, 225, 225);
     display: flex;
     justify-content: flex-end;
     align-items: center;
